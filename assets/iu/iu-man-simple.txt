@@ -1,0 +1,9 @@
++ - * / % ^ < > = <= >=
+#t #nil
+sqrt list define lambda
+if cond load quote atom
+eq car cdr cons
+and or not xor
+str-append join strlen
+display println
+:time :q

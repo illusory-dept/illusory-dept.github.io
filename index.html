@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>illusory-dept</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="brand">
+                <img class="logo" src="logo.png" alt="wq-neko" />
+                <h1 class="title">illusory-dept</h1>
+            </div>
+
+            <form id="searchForm" role="search" aria-label="Search">
+                <input
+                    id="search"
+                    class="search"
+                    type="text"
+                    placeholder="Filter buffer symbols..."
+                    autocomplete="off"
+                    spellcheck="false" />
+                <button
+                    type="button"
+                    id="clearBtn"
+                    class="clear"
+                    aria-label="Clear search">
+                    ×
+                </button>
+            </form>
+
+            <div class="controls" aria-label="Control buttons">
+                <button
+                    id="expandAllBtn"
+                    class="btn"
+                    type="button"
+                    aria-label="Expand all">
+                    expand-all
+                </button>
+                <button
+                    id="collapseAllBtn"
+                    class="btn"
+                    type="button"
+                    aria-label="Collapse all">
+                    collapse-all
+                </button>
+                <a
+                    href="blog/index.html"
+                    class="btn"
+                    aria-label="Go to linklog">
+                    more
+                </a>
+                <span class="kbd-hint" aria-label="Open command palette"
+                    >M-x
+                </span>
+            </div>
+        </header>
+
+        <main class="content" aria-label="catalog">
+            <div class="legend" aria-hidden="true">
+                <code>
+                    <span class="id">pin</span>
+                    <span class="op">:&nbsp;</span>
+                    <span class="id">wq</span>
+                </code>
+                <code>
+                    <span class="id">news</span>
+                    <span class="op">:&nbsp;</span>
+                    <span class="str">"wq 0.6.0"</span>
+                </code>
+            </div>
+
+            <nav class="tree" aria-label="Languages">
+                <ul class="branch"></ul>
+            </nav>
+        </main>
+
+        <footer class="site-footer">
+            <small>(c) <span id="year"></span> tttiw</small><br />
+            <small>tttiw@nekoarch.cc</small>
+        </footer>
+
+        <!-- M-x command palette -->
+        <div
+            id="mx"
+            class="mx"
+            role="dialog"
+            aria-modal="false"
+            aria-label="Command palette"
+            hidden>
+            <span class="mx-prefix">i-d %</span>
+            <input
+                id="mxInput"
+                class="mx-input"
+                type="text"
+                spellcheck="false" />
+            <ul
+                id="mxList"
+                class="mx-list"
+                role="listbox"
+                aria-label="Commands"></ul>
+        </div>
+
+        <script type="module" src="treeloader.js"></script>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
++ - * / /. % %. ^ , # : = ~ < > <= >=
+$[cond;t;f1;f2...]
+$.[cond;t1;t2...]
+W[cond;s1;s2...]
+N[n;echo _n]
+@a @b @c @r @t
+int float char symbol bool
+list dict function stream
+lst:(1;2);       lst[0;1]
+dct:(`a:1;`b:2); dct[`a;`b]
+fun:{2*x+y};     fun[3;4]
