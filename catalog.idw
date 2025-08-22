@@ -1,5 +1,5 @@
 lang\  wq @t(kw,id)
-  des : ( "clean" ; "fun" ; "lists" ) @t(id,op,op,str,op,str,op,str,op)
+  des : ( "lyrical" ; "fun" ; "lists" ) @t(id,op,op,str,op,str,op,str,op)
   exa : "exa.wq" @t(id,op,url) @u(["assets/wq/wq-exa.html", false])
   repo : "github.com/illusory-dept/wq" @t(id,op,url) @u("https://github.com/illusory-dept/wq")
   man : "wq-man.txt" @t(id,op,url) @u(["assets/wq/wq-man-simple.txt", false])
